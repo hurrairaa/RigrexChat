@@ -63,10 +63,10 @@ class Users extends Component {
     static async getInitialProps(ctx){
         try{
             axios.defaults.headers=ctx.req?.headers;
-            const authResponse= await axios.post('http://127.0.0.1:3000/api/auth-user');
+            const authResponse= await axios.post('https://rigrex-chat.herokuapp.com/api/auth-user');
             const auth=authResponse.data.data
             
-            const userResponse= await axios.get('http://127.0.0.1:3000/api/fetch-user')
+            const userResponse= await axios.get('https://rigrex-chat.herokuapp.com/api/fetch-user')
             const users=userResponse.data
 
             return {users:users,auth:auth}
