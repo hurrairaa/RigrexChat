@@ -14,8 +14,8 @@ class Sockets{
                 socket.broadcast.emit('chatMessage',msg);
             })
 
-            socket.on('joined',(user)=>{
-                socket.broadcast.emit('joined',`${user.name} has joined the chat`);
+            socket.on('joined',(msg)=>{
+                socket.broadcast.emit('joined',msg);
             })
             
             socket.on('disconnect',()=>{

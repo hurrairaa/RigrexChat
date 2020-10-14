@@ -13,10 +13,11 @@ class Users extends Component {
         this.socket =io();
 
         this.socket.on('message',data=>{
-            this.setState({['sendMsg']:this.state.sentMsgs.push({msg:data,user_id:0})});
-                        
-            this.socket.emit('joined',this.props.auth);
+            this.setState({['sendMsg']:this.state.sentMsgs.push({msg:data,user_id:0})});            
         })
+        
+        this.socket.emit('joined','a user has joined the chat');
+
         this.socket.on('joined',(data)=>{
             this.setState({['sendMsg']:this.state.sentMsgs.push({msg:data,user_id:0})});
         })
