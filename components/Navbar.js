@@ -20,24 +20,34 @@ const Navbar=()=>{
         <div className="navbar">
             
             <div className="logo"> RigrexChat</div>
-            <div>
-                <Link href="/" ><a className="mr-3"> home</a></Link>
-                {!isLoggedIn ? <Link href="/login"><a className="mr-3"> login</a></Link> : null}
-                {!isLoggedIn ? <Link href="/register"><a className="mr-3"> register</a></Link> : null}
-                {isLoggedIn ? <Link href="/chat"><a className="mr-3"> chat</a></Link> : null}
-                {isLoggedIn ? <Link href="/logout"><a className="mr-3"> logout</a></Link> : null}
+            <div className="link-container">
+                <Link href="/" ><a className=" nav-link"> home</a></Link>
+                {!isLoggedIn ? <Link href="/login"><a className=" nav-link"> login</a></Link> : null}
+                {!isLoggedIn ? <Link href="/register"><a className=" nav-link"> register</a></Link> : null}
+                {isLoggedIn ? <Link href="/chat"><a className=" nav-link"> chat</a></Link> : null}
+                {isLoggedIn ? <Link href="/logout"><a className=" nav-link"> logout</a></Link> : null}
             </div>
     
             <style jsx>{`
                 .navbar{
                     display:flex;
                     justify-content:space-arround;
-                    background-color:lightgray;
+                    background-color:#36405c;
                     color:black;
                 }
                 .logo{
                     letter-spacing:3px;
+                    color:white;
+                    font-weight:1000;
                 }
+                .navbar .link-container{
+                    display:flex;
+                    flex-direction:row;
+                }
+                .nav-link{
+                    text-decoration: none;
+                    color:white;
+                  }
             `}</style>
         </div>
     );

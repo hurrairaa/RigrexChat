@@ -42,7 +42,7 @@ class Register extends Component{
                 <div className="container center">
                     <div className="p-2 m-5 card card-size">
                         <div className="card-header">
-                            <h2 >Register</h2>
+                            <h2 className="card-head">Register</h2>
                         </div>  
                         <div className="card-body">
                             <form onSubmit={this.createUser} method="post">

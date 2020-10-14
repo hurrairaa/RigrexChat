@@ -90,7 +90,7 @@ class Users extends Component {
 
         return (
             <Layout>
-                <div className="container-fluid h-100">
+                <div className="mt-5 container-fluid h-100">
                     <div className="row justify-content-center h-100">
                         <div className="col-md-4 col-xl-3 chat">
                             <div className="card mb-sm-3 mb-md-0 contacts_card">

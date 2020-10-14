@@ -47,7 +47,7 @@ class Login extends Component{
 
                     <div className="p-2 m-5 card card-size">
                         <div className="card-header">
-                            <h2 >Login</h2>
+                            <h2 className="card-head">Login</h2>
                         </div>  
                         <div className="card-body">
                             <form onSubmit={this.loginUser}>

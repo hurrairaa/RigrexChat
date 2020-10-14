@@ -28,7 +28,13 @@ html {
   margin-top: auto;
   margin-bottom: auto;
 }
-
+.card-head{
+  color:white;
+  font-weight: 700;
+}
+label{
+  color:rgb(248, 248, 248);
+}
 .card {
   height: 500px;
   border-radius: 15px !important;
@@ -285,5 +291,95 @@ html {
 @media(max-width: 576px) {
   .contacts_card {
     margin-bottom: 15px !important;
+  }
+}
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 98px;
+}
+
+@media(min-width: 992px) {
+  .hero {
+    margin-top: 53px;
+  }
+}
+.hero__content {
+  text-align: initial;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+@media(min-width:992px) {
+  .hero__content {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+}
+.hero__title {
+  font-size: 1.8rem;
+  font-weight: 950;
+}
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 576px) {
+  .hero__title {
+    font-size: 2.5rem;
+    line-height: 1.17;
+  }
+  
+  .hero__paragraph {
+    width: 80%;
+  }
+}
+@media(min-width: 992px) {
+  .hero__title {
+    width: 95%;
+    font-size: 3rem;
+    line-height: 1.17;
+  }
+
+  .hero__paragraph {
+    font-size: 1rem;
+    width: 70%;
+  }
+}
+.hero__paragraph {
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.7;
+  opacity: .9;
+}
+
+@media(min-width: 1200px) {
+  .hero__title {
+    font-size: 3.5rem;
+    line-height: 1.17;
+  }
+}
+.hero__btns-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  margin: auto;
+}
+
+.hero__btn {
+  display: inline-block;
+  width: 100%;
+}
+
+@media(min-width: 992px) {
+  .hero__btns-container {
+    width: auto;
+    flex-direction: row;
+  }
+
+  .hero__btn {
+    width: auto;
   }
 }
