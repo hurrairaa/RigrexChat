@@ -53,12 +53,12 @@ class Login extends Component{
                             <form onSubmit={this.loginUser}>
                                 <div className="form-group">
                                     <label htmlFor="email">Email:</label>
-                                    <input id="email" type="text" className="form-control" name="email" onChange={this.onChange}/>
+                                    <input id="email" type="text" className="form-control" name="email" onChange={this.onChange} placeholder="Enter Email"/>
                                     {this.validator.message('email',this.state.email,'required|email',{className:'text-danger'})}
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="password">Password:</label>
-                                    <input type="password" id="password" className="form-control" name="password" onChange={this.onChange}/>
+                                    <input type="password" id="password" className="form-control" name="password" onChange={this.onChange} placeholder="Enter Password"/>
                                     {this.validator.message('password',this.state.password,'required',{className:'text-danger'})}
                                 </div>
                                 <button className="btn btn-success">login</button>
