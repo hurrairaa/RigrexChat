@@ -3,13 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "nodemon server/index.js p $PORT",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js -p $PORT"
   },
   "dependencies": {
+    "axios": "^0.20.0",
+    "bcrypt": "^5.0.0",
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.10.8",
     "next": "9.5.3",
+    "nodemon": "^2.0.4",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-cookie": "^4.0.3",
+    "react-dom": "16.13.1",
+    "react-hook-form": "^6.9.2",
+    "simple-react-validator": "^1.5.0",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.4.0"
   }
 }
